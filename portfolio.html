@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Portfolio</title>
+<img src="ma_photo.jpg" alt="ma_photo" width="200" height="200">
+<style>
+    div img{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px; 
+        padding: 20px;
+        background-color:rgb(127, 204, 179);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: visible;
+        width: auto; 
+        height: auto; 
+        object-fit: cover; 
+        display: block;  
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>LEUCHI WANSI BELVA CHARLAINE</h1>
+    <p> Apprentis Développeur Web | Secretariat Bureautique|Programmation C|Algorithmique </p>
+    <nav>
+        <ul>
+            <li><a href="Grid-card.html">Projets</a></li><br>
+            <li><a href="mon-cv.html">CV</a></li><br>
+            <li><a href="https://github.com/charlaine1203/mon_site" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="projets" class="container">
+    <h2>Mes Projets</h2>
+    <div class="grid">
+        <div class="project-card">
+            <img src="hyunjin.jpg" alt="Aperçu de creation de portfolio">
+            <h2>Creation de Portfolio</h2>
+            <p>Je mets a la disposition du public mes services afin de creer un portfolio par leurs propres moyens et / ou encore par mon assistance</p>
+            <div class="project-links">
+                <a href="https://github.com/charlaine1203/mon_site/commit/616593f531e2ccd4a45bc253df62b0d58bbc3d71" target="_blank">Voir le code</a>
+            
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="pont .jpg"alt="Aperçu d'un pont banc">
+            <img src="vue.jpg"  alt="vue">
+            <h2>Pont blanc</h2>
+            <p>Cette image represente un pont blanc</p>
+            <div class="project-links">
+                <a href="https://github.com/charlaine1203/mon_site/commit/616593f531e2ccd4a45bc253df62b0d58bbc3d71#diff-5833c82621a00897999b96722bfb5e6487827aafc322bb61ac721683ad5bbc72" target="_blank">Voir le code</a>
+                </div>
+        </div>
+        </div>
+</section>
+
+<section id="cv" class="container">
+    <h3> Aucune expérience Professionnelle</h3>
+    <h1>Nous offrons un enseignement complet  et de qualite dans nos diverses structures</h1>
+    <h2> L'expertise n'est acquise que par un travail de forgeron. <br> Comme nous , vous pouvez tout aussi programmer, il faut juste de la methode , un objectif et des encadreurs de cadre.</h2>
+    <h3>Vous pouvez télécharger mon CV au format PDF <a href="mon-cv.pdf" download="mon-cv" target="_blank">ici</a>.</h3>
+</section>
+
+<footer>
+    <p>&copy; 2025 LEUCHI WANSI BELVA CHARLAINE. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

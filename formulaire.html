@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etudiant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>
+    <div class="script">
+      <label for="theme-switcher" > THEME:</label>
+      <button type="button" id="theme-label" class="theme">C/S</button>
+    </div><br><br>
+    <form action="traitement.php" method="post" class="form-container" id="formcontainer">
+
+      <div class="infos" id="main-content">
+
+        <label for="name" >Nom:</label>
+        <input type="text" id="name" name="Nom" placeholder="votre nom"><br><br>
+
+        <label for="firstname">Prenom:</label>
+        <input type="text" id="firstname" name="Prenom" placeholder="votre prenom" ><br><br>
+      
+        <label for="number">CONTACTS:</label>
+        <input type="tel" name="number" id="number" placeholder="+237 6XXXXXXXX" pattern="[0-9]{9,}" title="numero de telephone(min 9 chiffres)"  required><br><br>
+
+        <label for="date" >date de naissance:</label>
+        <input type="date" id="date" name="date de naissance" required><br><br>
+
+        <label for="sexe">Sexe:</label>
+        <input type="radio" id="sexe" name="sexe">Feminin
+        <input type="radio" id="sexe" name="sexe">Masculin <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" ><br><br>
+
+        <label for="nationality" >nationalite:</label>
+        <select name="choix" id="choix" required>
+          <option value="Cam">Cameroon</option>
+          <option value="Cs">Sud Korea</option>
+          <option value="Tha">Thailande</option>
+          <option value="Ja">Japon</option>
+          <option value="Ci">Cote d'Ivoire</option>
+          <option value="USA">USA</option>
+          <option value="Can">Canada</option>
+          <option value="Al">Deutschland</option>
+        </select><br><br>
+      
+        <label for="type" >Type de Demande :</label">
+        <select name="type" id="type">
+          <option value="ques">Questions</option>
+          <option value="add" >Ajouts</option>
+          <option value="Job" >Emploie/stage</option>
+          <option value="inf" >Informations supplementaire</option>
+        </select><br><br>
+
+        <label for="password">Mot De Passe:</label>
+        <input type="password" id="password"><br><br>
+        <p id="Message"></p>
+        <label for="confirm">Confirmez le mot de passe</label>
+        <input type="password" id="confirm"><br><br>
+        <P id="Message1"></P>
+        <label for="profession" >profession:</label>
+        <input type="text" placeholder="developpeur,agent de securite,etudiant"><br><br>
+
+        <label for="message" >Message:</label>
+        <textarea name="message" id="messsage" rows="5" cols="" required></textarea><br><br>
+
+        <label for="RGPD/Politique" >Politique De Confidentialite</label>
+        <input type="checkbox" id="RGPD/Politique" required><br><br>
+
+      </div>
+
+      <div class="button">
+        Envoyer:<button type="submit" >Envoyer</button>
+        Annuler:<button type="reset" >Annuler</button>
+      </div>
+    </form>
+  </h2>
+  <footer data-translate="footer_text">
+    <h2> &copy; 2025 , LEUCHI WANSI BELVA CHARLAINE . TOUT DROIT D'AUTEUR RESERVES</h2>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

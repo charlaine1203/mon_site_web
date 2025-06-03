@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s , color 0.3s;
+}
+body .dark-mode  {
+    background-color: #333;
+    color: #eee;
+}
+
+h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+body .dark-mode .h2{
+    color: #eee;
+}
+input{
+    display: inline-block;
+    height: max-content;
+}
+.script{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.script label,.script select,.script button{
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    font-size:1rem ;
+}
+.form-container{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.infos{
+    background-color: aliceblue;
+    color: rgb(102,89,4);
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: backgound-color 0.3s , color 0.3s;
+}
+body .dark-mode .infos{
+    background-color: #555;
+    color: #f5f5f5;
+}
+.main-content{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.button{
+    margin: 20px;
+    text-align: center;
+}
+.button button {
+    padding: 10px 20px;
+    margin: 0  10px;
+    background-color: #007bff;
+    color: white;
+    border: #555;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.button button:hover{
+    background-color: #0056b3;
+}
+body footer {
+    background-color:indianred;
+    height: auto;
+    text-align: center;
+}

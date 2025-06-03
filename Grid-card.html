@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposition Photo Grid-Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; 
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: visible;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out; 
+        }
+
+        .card:hover {
+            transform: translateY(-5px); 
+        }
+
+        .card img {
+            width: 100%; 
+            height: 400px; 
+            object-fit: cover; 
+            display: block; 
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="card">
+            <img src="temple.jpg" alt="temple chinois">
+            <div class="card-content">
+                <h3>Temple</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="vue.jpg" alt="mer et coucher de soleil">
+            <div class="card-content">
+                <h3>Mer</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="jolie.jpg" alt="magnifique">
+            <div class="card-content">
+          <h3>jolie vue</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pont .jpg" alt="Pont blanc">
+            <div class="card-content">
+                <h3>Pont blanc</h3>
+            </div>
+        </div>
+         <div class="card">
+             <img src="arbre_de_vie.jpg" alt="un arbre a la racine">
+            <div class="card-content">
+                 <h3>arbre_de_vie</h3>
+            </div>
+        </div>      
+        <div class="card">
+            <img src="arbre.jpg" alt="un arbre protecteur">
+            <h3>Arbre</h3>
+        </div>
+        <div class="card">
+            <img src="coeur.jpg" alt="de jolies coeurs sur la mer">
+            <div class="card-content">
+                <h3>coeur sur sable</h3>
+            </div>
+        </div>     
+        <div class="card">
+            <img src="coeurs.jpg" alt="coeurs">
+            <div class="card-content">
+                <h3>coeurs lumineux</h3>
+            </div>
+        </div>    
+        <div class="card">
+            <img src="han.png" alt="K-POP Idol">
+            <div class="card-content">
+                <h3>han</h3>
+            </div>
+        </div>      
+        <div class="card">
+            <img src="felix.jpg" alt="K-POP Idol">
+            <div class="card-content">
+                 <h3>Felix</h3>
+            </div>
+        </div>      
+        <div class="card">
+            <img src="black-pink.jpg" alt="K-POP Idol">
+            <div class="card-content">
+                <h3>Black Pink</h3>
+            </div>
+        </div>      
+        <div class="card">
+            <img src="boss.jpg" alt="Entrepeneure">
+            <div class="card-content">
+                <h3>Boss</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="espace vert.jpg" alt="Verdure">
+            <div class="card-content">
+                <h3>Verdure</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
