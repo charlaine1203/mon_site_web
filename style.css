@@ -78,33 +78,6 @@ body .dark-mode .infos{
 .button button:hover{
     background-color: #0056b3;
 }
-.password-container , .confirm-container{
-    position:relative;
-    display:inline-block;
-}
-.password-container input[type="password"],.password-container input[type="text"],.confirm-container input[type="password"],.confirm-container input[type="text"]{
-    padding-right:35px;
-    width:calc(100% - 45px);
-    padding:10px;
-    margin:5px 0;
-    border:1px solid #ccc;
-    border-radius:4px;
-    box-sizing:border-box;
-}
-.toggle-password{
-    position:absolute;
-    right:10px;
-    top:50%;
-    transform:translateY(-50%);
-    cursor:pointer;
-    color:#888;
-    font-size:1.2em;
-    line-height:1;
-    z-index:2;
-}
-.toggle-password:hover{
-    color:#333;
-}
 body footer {
     background-color:indianred;
     height: auto;
