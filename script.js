@@ -43,18 +43,28 @@ document.addEventListener('DOMContentLoaded',() =>
             message.style.color="red";
         }
     });
-    form.addEventListener('DOMContentLoaded', function() {
+   document.addEventListener('DOMContentLoaded', function() {
+    // Pour le premier champ de mot de passe
     const togglePassword = document.getElementById('togglePassword');
     const passwordInput = document.getElementById('password');
 
-    togglePassword.addEventListener('click', function() {
+    if (togglePassword && passwordInput) { // Vérifiez si les éléments existent
+        togglePassword.addEventListener('click', function() {
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordInput.setAttribute('type', type);
-            if (type === 'password') {
-                this.textContent = '👁'; 
-            } else {
-                this.textContent = '🙈'; 
-            }
-        });
-    });
+            this.textContent = (type === 'password') ? '👁' : '🙈'; 
+        });
+    }
+
+    // Pour le deuxième champ de mot de passe (confirmation)
+    const confirmPasswordInput = document.getElementById('confirm');
+
+    if (togglePassword && confirmPasswordInput) { // Vérifiez si les éléments existent
+        togglePassword.addEventListener('click', function() {
+            const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPasswordInput.setAttribute('type', type);
+            this.textContent = (type === 'password') ? '👁' : '🙈';
+        });
+    }
+});
 });
